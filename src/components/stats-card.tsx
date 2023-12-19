@@ -1,4 +1,3 @@
-
 import { Typography, Card } from "@material-tailwind/react";
 interface StatsCardProps {
   count: string;
@@ -17,6 +16,5 @@ export function StatsCard({ count, title }: StatsCardProps) {
     </Card>
   );
 }
-
 
 export default StatsCard;

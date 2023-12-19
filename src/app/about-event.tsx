@@ -5,16 +5,28 @@ import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
   {
-    title: "Cutting-Edge Insights!",
+    title: "Capacity Development!",
     description:
-      "Gain deep insights into the latest AI trends, developments, and applications that are reshaping industries worldwide. ",
-    subTitle: "Presentation",
+      "Empowering the youth with skills for entrepreneurship and employability. Empowering the youth with skills for entrepreneurship and employability ",
+    subTitle: "Pillar I",
   },
   {
-    title: "Practical Knowledge!",
+    title: "Access to Funding!",
     description:
-      "Attend workshops and hands-on sessions to acquire practical skills that you can apply immediately.",
-    subTitle: "Workshops",
+      "Get up to N50m in business grants and loans to scale your business.",
+    subTitle: "Pillar II",
+  },
+  {
+    title: "Exchange Programmes!",
+    description:
+      "Explore exclusive business exchange programs and seize the chance to win an SME award!",
+    subTitle: "Pillar III",
+  },
+  {
+    title: "Employment Opportunities!",
+    description:
+      "Discover employment opportunities after completing our comprehensive capacity development programs.",
+    subTitle: "Pillar IV",
   },
 ];
 
@@ -22,21 +34,21 @@ export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h6" className="text-center mb-2" color="orange">
-        About the event
+        Benefits
       </Typography>
       <Typography variant="h3" className="text-center" color="blue-gray">
-        Why Attend?
+        About The Program
       </Typography>
       <Typography
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
-        Welcome to the AI Conference 2023, where the future unfolds! Whether
-        you&apos;re a seasoned AI professional, a curious newcomer, or a
-        business leader looking to harness the power of AI, this conference is
-        designed to inspire, educate, and connect.
+        ‘The Innovative and Empowered Youth Program (IEYP)’ targets is the
+        Youths (entrepreneurs and career-focused). It aims to build their
+        capacity and as well give them access to affordable finance and
+        employment opportunities.
       </Typography>
-      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      {/* <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
         ))}
@@ -47,7 +59,7 @@ export function AboutEvent() {
             description="Connect with industry leaders, AI experts, and fellow enthusiasts to build valuable professional relationships."
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

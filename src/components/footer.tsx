@@ -1,41 +1,13 @@
 import { Typography, Button, IconButton } from "@material-tailwind/react";
 
 const CURRENT_YEAR = new Date().getFullYear();
-const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
+const LINKS = ["About", "Partners", "FAQ"];
 
 export function Footer() {
   return (
-    <footer className="pb-5 p-10 md:pt-10">
+    <footer className="pb-5 p-10 md:pt-10 ">
       <div className="container flex flex-col mx-auto">
-        <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 ">
-          <Typography
-            className="text-2xl md:text-3xl text-center font-bold "
-            color="white"
-          >
-            Join now and get 30% OFF!
-          </Typography>
-          <Typography
-            color="white"
-            className=" md:w-7/12 text-center my-3 !text-base"
-          >
-            Don&apos;t miss out on this exclusive offer that will end soon.
-          </Typography>
-          <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
-            <Button color="white" size="md">
-              buy ticket
-            </Button>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row items-center !justify-between">
-          <Typography
-            as="a"
-            href="https://www.material-tailwind.com"
-            target="_blank"
-            variant="h6"
-            className="text-gray-900"
-          >
-            Material Tailwind
-          </Typography>
+        <div className="flex flex-col md:flex-row items-center !justify-between space-x-12 mx-auto">
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
               <li key={index}>
@@ -44,7 +16,7 @@ export function Footer() {
                   href="#"
                   variant="small"
                   color="white"
-                  className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
+                  className="font-normal !text-white hover:!text-[#ff8200] transition-colors"
                 >
                   {link}
                 </Typography>
@@ -52,33 +24,27 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-twitter text-lg" />
+            <IconButton size="sm" color="white" variant="text">
+              <i className="fa-brands fa-twitter text-lg hover:!text-[#ff8200]" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-youtube text-lg" />
+            <IconButton size="sm" color="white" variant="text">
+              <i className="fa-brands fa-youtube text-lg hover:!text-[#ff8200]" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-instagram text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-github text-lg" />
+            <IconButton size="sm" color="white" variant="text">
+              <i className="fa-brands fa-instagram text-lg hover:!text-[#ff8200]" />
             </IconButton>
           </div>
         </div>
+      </div>
+      <div className="mx-auto">
         <Typography
-          color="blue-gray"
-          className="text-center mt-12 font-normal !text-gray-700"
+          color="white"
+          className="text-center mt-12 font-normal !text-white"
         >
-          &copy; {CURRENT_YEAR} Made with{" "}
-          <a href="https://www.material-tailwind.com" target="_blank">
-            Material Tailwind
-          </a>{" "}
-          by{" "}
-          <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
+          &copy; {CURRENT_YEAR}{" "}
+          <a href="https://www.accessbankplc.com" target="_blank">
+            Access Bank
           </a>
-          .
         </Typography>
       </div>
     </footer>

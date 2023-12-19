@@ -24,52 +24,57 @@ export function EventContentCard({
   img,
 }: EventContentCardProps) {
   return (
-    <Card
-      color="transparent"
-      shadow={false}
-      className="lg:!flex-row mb-10 lg:items-end"
-    >
-      <CardHeader
-        floated={false}
+    <div className="bg-[#ff8200] p-4 mb-8 rounded-lg">
+      <Card
+        color="transparent"
         shadow={false}
-        className="h-[32rem] max-w-[28rem] shrink-0"
+        className="lg:!flex-row mb-10 lg:items-end "
       >
-        <Image
-          width={768}
-          height={768}
-          src={img}
-          alt="testimonial image"
-          className="h-full w-full object-cover"
-        />
-      </CardHeader>
-      <CardBody className="col-span-full lg:col-span-3">
-        <Typography variant="h6" color="blue-gray" className="mb-4">
-          {panel}
-        </Typography>
-        <Typography variant="h2" color="blue-gray" className="mb-4 font-medium">
-          {title}
-        </Typography>
-        <Typography className="mb-12 md:w-8/12 font-medium !text-gray-500">
-          {des}
-        </Typography>
-        <div className="flex items-center gap-4">
-          <Avatar
-            variant="circular"
-            src="/logos/spotify-logo.png"
-            alt="spotify"
-            size="lg"
+        <CardHeader
+          floated={false}
+          shadow={false}
+          className="h-[32rem] max-w-[28rem] shrink-0"
+        >
+          <Image
+            width={500}
+            height={300}
+            src={img}
+            alt="testimonial image"
+            className="h-full w-full object-cover"
           />
-          <div>
-            <Typography variant="h6" color="blue-gray" className="mb-0.5">
-              {name}
-            </Typography>
-            <Typography variant="small" className="font-normal !text-gray-500">
-              {position}
-            </Typography>
+        </CardHeader>
+        <CardBody className="col-span-full lg:col-span-3">
+          {/* <Typography variant="h6" color="blue-gray" className="mb-4">
+       {panel}
+     </Typography> */}
+          <Typography variant="h2" color="white" className="mb-4 font-bold">
+            {title}
+          </Typography>
+          <Typography className="mb-12 md:w-8/12 font-medium !text-white text-lg">
+            {des}
+          </Typography>
+          <div className="flex items-center gap-4">
+            {/* <Avatar
+              variant="circular"
+              src="/logos/spotify-logo.png"
+              alt="spotify"
+              size="lg"
+            /> */}
+            <div>
+              {/* <Typography variant="h6" color="blue-gray" className="mb-0.5">
+                {name}
+              </Typography> */}
+              {/* <Typography
+                variant="small"
+                className="font-normal !text-gray-500"
+              >
+                {position}
+              </Typography> */}
+            </div>
           </div>
-        </div>
-      </CardBody>
-    </Card>
+        </CardBody>
+      </Card>
+    </div>
   );
 }
 

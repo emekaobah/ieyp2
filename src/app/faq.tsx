@@ -1,28 +1,67 @@
 "use client";
 
 import React from "react";
-import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
+import {
+  Typography,
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
 const FAQS = [
   {
-    title: "1. How do I register for the AI Conference 2023?",
-    desc: "You can register for the AI Conference 2023 by visiting our registration page. Follow the simple steps to complete your registration and secure your spot at the conference.",
+    title:
+      "1. What is the primary focus of the training program for career-focused youths and entrepreneurs?",
+    desc: "The training program is designed to empower and enhance the skills of career-focused youths and entrepreneurs, equipping them for success in their respective fields.",
   },
   {
-    title: "2. What are the registration fees, and what is included?",
-    desc: "It really matters and then like it really doesn't matter. What matters is the people who are sparked by it. And the people who are like offended by it, it doesn't matter. Because it's about motivating the doers. Because I'm here to follow my dreams and inspire other people to follow their dreams, too. We're not always in the position that we want to be at. We're constantly growing. We're constantly making mistakes. We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game of life you need to appreciate every moment. A lot of people don't appreciate the moment until it's passed.",
+    title:
+      "2. How long is the duration of the training, and what are the key components covered during the program?",
+    desc: "The training duration is structured to provide comprehensive learning opportunities. Key components include skill development, entrepreneurship training, and career-focused modules.",
   },
   {
-    title: "3. Can I get a refund if I need to cancel my registration?",
-    desc: "The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. For standing out. But the time is now to be okay to be the greatest you. Would you believe in what you believe in, if you were the only one who believed it? If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
+    title:
+      "3. What opportunities for financial support are available upon completing the training?",
+    desc: "Graduates of the program have access to various financial support mechanisms, including loans, grants, and the possibility of competing for national entrepreneurial awards.",
   },
   {
-    title: "4. Will there be on-site registration available?",
+    title:
+      "4. How are the loans and grants structured, and what are the eligibility criteria for applicants?",
     desc: "I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything. If everything I did failed - which it doesn't, it actually succeeds - just the fact that I'm willing to fail is an inspiration. People are so scared to lose that they don't even try. Like, one thing people can't say is that I'm not trying, and I'm not trying my hardest, and I'm not trying to do the best way I know how.",
   },
   {
     title: "5. What is the dress code for the conference?",
-    desc: "There's nothing I really wanted to do in life that I wasn't able to get good at. That's my skill. I'm not really specifically talented at anything except for the ability to learn. That's what I do. That's what I'm here for. Don't be afraid to be wrong because you can't learn anything from a compliment. I always felt like I could do anything. That's the main thing people are controlled by! Thoughts- their perception of themselves! They're slowed down by their perception of themselves. If you're taught you can't do anything, you won't do anything. I was taught I could do everything.",
+    desc: "The financial support options are tailored to the needs of the participants. Eligibility criteria typically involve successful completion of the training and a viable business or career plan.",
+  },
+
+  {
+    title:
+      "5. Can you provide more details about the national entrepreneurial awards?",
+    desc: "The national entrepreneurial awards recognize outstanding achievements and innovative contributions. Winners may receive financial incentives, mentorship, and valuable exposure to propel their ventures to greater heights.",
+  },
+  {
+    title:
+      "6. Are employment opportunities also available for participants completing the training program?",
+    desc: "Yes, the program connects participants with potential employers, fostering valuable networking opportunities and increasing their chances of securing meaningful employment in their chosen fields.",
+  },
+  {
+    title:
+      "7. How is the training program structured to cater to the diverse needs of participants?",
+    desc: "The program is designed with a flexible structure, offering diverse modules and resources to accommodate participants with various career aspirations, whether in entrepreneurship or traditional employment.",
+  },
+  {
+    title: "8. What industries or sectors does the training program focus on?",
+    desc: "The program is industry-agnostic, catering to a wide range of sectors. It is adaptable to the diverse interests and career paths of participants, including but not limited to technology, business, healthcare, and creative industries.",
+  },
+  {
+    title:
+      "9. How can interested individuals apply for the training program, and what is the selection process like?",
+    desc: "Information on applying for the training program is available on our website. The selection process involves reviewing applications, possibly followed by interviews, to ensure the program is a good fit for the candidates.",
+  },
+  {
+    title:
+      "10. Is there ongoing support for program graduates beyond the initial training period?",
+    desc: "Yes, graduates receive ongoing support through mentorship programs, networking events, and access to additional resources. This support aims to foster long-term success and sustainability in their chosen careers or entrepreneurial ventures.",
   },
 ];
 
@@ -41,9 +80,10 @@ export function Faq() {
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
-            Welcome to the AI Conference 2023 FAQ section. We&apos;re here to
-            address your most common queries and provide you with the
-            information you need to make the most of your conference experience.
+            Please find below frequently asked questions about the program.
+            We&apos;re here to address your most common queries and provide you
+            with the information you need to make the most of your program
+            experience.
           </Typography>
         </div>
 
@@ -72,6 +112,5 @@ export function Faq() {
     </section>
   );
 }
-
 
 export default Faq;
